@@ -51,20 +51,21 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1">Titulo de la practica de laboratorio</h1>
+                        <h1 class="fw-bolder mb-1">Curso de Arduino IBERO</h1>
 
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
-                            <img class="img-fluid rounded-circle" width="50px" src="assets/Huber.jpg" alt="..." />
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/EMMA.jpeg" alt="..." />
                             <div class="ms-2">
-                                <div class="fw-bold">Nombre de integrante del equipo</div>
-                                <div class="text-muted">Carrera que estudia</div>
+                                <div class="fw-bold">Del Villar Soto Jose Emmanuel</div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mes dia, Año</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Agosto 21, 2023</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Introducción</a>
 
                     </header>
                 </div>
@@ -74,70 +75,687 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                    <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="1200px" src="assets/foto-intro.jpeg" alt="..." /></figure>
                                 
-                    <p id="resumen">
+                        <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4"></p>En esta práctica se realizar varios ejercicios básicos con un Arduino uno, la finalidad de estos ejercicios es el recordar o aprender el funcionamiento básico de la programación de un Arduino para poder implementarlo para proyectos futuros.
+                        <p class="fs-6 mb-4"></p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4"></p>Arduino es una plataforma de software y hardware libres basada en una placa que incluye circuitos electrónicos con entradas y salidas, analógicas y digitales, que conectan el mundo físico con el mundo virtual, a partir de la cual se pueden crear objetos electrónicos interactivos, como robots o sistemas domóticos.
+                        <p class="fs-6 mb-4"></p>El Arduino es una placa basada en un microcontrolador ATMEL. Los microcontroladores son circuitos integrados en los que se pueden grabar instrucciones, las cuales las escribes con el lenguaje de programación que puedes utilizar en el entorno Arduino IDE. Estas instrucciones permiten crear programas que interactúan con los circuitos de la placa.
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4"></p>
+                        Placa de desarrollo ARDUINO UNO <br>
+                        Protoboard<br>
+                        Jumpers<br>
+                        Botones <br>
+                        Leds<br>
+                        Resistencias de 220 Ω<br>
+                        Dispay de 7 segmentos<br>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4"></p>Para el desarrollo de esta actividad el Profesor Huber Girón con la ayuda del Profesor Rafael Pérez nos proporcionaron un total de 18 ejercicios para realizar con un Arduino, estos ejercicios se encuentran en la plataforma de tinkercad agrupados en un curso hecho por ellos. Tendremos que realizar los circuitos e implementar la programación que nos pide cada ejercicio.
+                        <p class="fs-6 mb-4"></p>
                         
-                            <p id="simulacion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
+                        <p id="simulacion">
+                        <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                        <p class="fs-6 mb-4"></p>Ejercicios del curso basico de Arduino.
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="1000px" src="assets/tutoriales.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4"></p>
                     
-                            <p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Robot.mp4" type="video/mp4">
-                        </video></p></figure>
+                        <p class="fs-6 mb-4"></p>Listado de los ejercicios, junto con su codigo correspondiente.
+                        <p class="fs-6 mb-4"></p>
+
+
+            <!-- Seccion Tarjetas reportes Prácticas-->
+            <section id="practicas">
+                <div class="container px-5 my-2">
+                    <h2 class="fw-bolder fs-5 mb-4">Ejercicios:</h2>
+                    <div class="row gx-5">
+
+
+                        <!--Tarjeta Ejercicio 1 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/2.mp4" type="video/mp4">
+                                </video></p></figure>  
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code <br>
+                                        void setup()<br>
+                                        {<br>
+                                             pinMode(LED_BUILTIN, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                            digitalWrite(LED_BUILTIN, HIGH);<br>
+                                            delay(1000); // Wait for 1000 millisecond(s)<br>
+                                            digitalWrite(LED_BUILTIN, LOW);<br>
+                                            delay(1000); // Wait for 1000 millisecond(s)<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 2 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/2.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 2 : Salida Digital HIGH</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(LED_BUILTIN, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(LED_BUILTIN, HIGH);<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 3 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/3.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 3 : Salida Digital LOW</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(LED_BUILTIN, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(LED_BUILTIN, LOW);<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 4 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/4.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 4 : Salida Digital Delay</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(LED_BUILTIN, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(LED_BUILTIN, HIGH);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        digitalWrite(LED_BUILTIN, LOW);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 5 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/5.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 5 : Salida Digital Led</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        digitalWrite(13, LOW);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 6 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/6.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 6 : Salida Digital Protoboard 1</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        digitalWrite(13, LOW);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 7 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/7.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 7 : Salida Digital Protoboard 2</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        digitalWrite(13, LOW);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 8 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/8.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 8 : Salida Digital Leds 1</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, HIGH);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        digitalWrite(13, LOW);<br>
+                                        delay(100); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 9 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/9.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 9 : Salidas Digitales Leds 2</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                          pinMode(13, OUTPUT);<br>
+                                          pinMode(12, OUTPUT);<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                          digitalWrite(13, HIGH);<br>
+                                          delay(1000); // Wait for 1000 millisecond(s)<br>
+                                          digitalWrite(13, LOW);<br>
+                                          delay(1000); // Wait for 1000 millisecond(s)<br>
+                                          digitalWrite(12, HIGH);<br>
+                                          delay(1000); // Wait for 1000 millisecond(s)<br>
+                                          digitalWrite(12, LOW);<br>
+                                          delay(1000); // Wait for 1000 millisecond(s)<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 10 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/10.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 10 : Salida Digital Display 7 Segmentos</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        // int ledPin = 13;<br>
+                                        pinMode(13, OUTPUT);	//Segmento e<br>
+                                        pinMode(12, OUTPUT);	//Segmento d<br>
+                                        pinMode(10, OUTPUT);	//Segmento c<br>
+                                        pinMode(9, OUTPUT);	//Segmento punto<br>
+                                        pinMode(7, OUTPUT);	//Segmento b<br>
+                                        pinMode(6, OUTPUT);	//Segmento a<br>
+                                        pinMode(5, OUTPUT);	//Segmento f<br>
+                                        pinMode(4, OUTPUT);	//Segmento g<br>
+                                        }<br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(6, LOW);<br>
+                                        digitalWrite(7, LOW);<br>
+                                        digitalWrite(10, LOW);<br>
+                                        digitalWrite(12, LOW);<br>
+                                        digitalWrite(13, LOW);<br>
+                                        digitalWrite(5, LOW);<br>
+                                        digitalWrite(4, HIGH);<br>
+                                        digitalWrite(9, HIGH);<br>
+                                        delay(1000);<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 11 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/11.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Práctica 1: Titulo</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT); //Segmento e<br>
+                                        pinMode(12, OUTPUT); //Segmento d<br>
+                                        pinMode(10, OUTPUT); //Segmento c<br>
+                                        pinMode(9, OUTPUT);	//Segmento punto<br>
+                                        pinMode(7, OUTPUT);	//Segmento b<br>
+                                        pinMode(6, OUTPUT);	//Segmento a<br>
+                                        pinMode(5, OUTPUT);	//Segmento f<br>
+                                        pinMode(4, OUTPUT);	//Segmento g<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        // Mostramos el numero 0<br>
+                                        digitalWrite(6, HIGH); //Encendido<br>
+                                        digitalWrite(7, HIGH); //Encendido<br>
+                                        digitalWrite(10, HIGH); //Encendido<br>
+                                        digitalWrite(12, HIGH);	//Encendido<br>
+                                        digitalWrite(13, HIGH);	//Encendido<br>
+                                        digitalWrite(5, HIGH);	//Encendido<br>
+                                        digitalWrite(4, LOW);	//Apagado<br>
+                                        digitalWrite(9, LOW);	//Apagado<br>
+                                        delay(1000);<br>
+                                        
+                                        // Mostramos el numero 1<br>
+                                        digitalWrite(6, LOW);	//Apagado<br>
+                                        digitalWrite(7, HIGH);	//Encendido<br>
+                                        digitalWrite(10, HIGH);	//Encendido<br>
+                                        digitalWrite(12, LOW);	//Apagado<br>
+                                        digitalWrite(13, LOW);	//Apagado<br>
+                                        digitalWrite(5, LOW);	//Apagado<br>
+                                        digitalWrite(4, LOW);	//Apagado<br>
+                                        digitalWrite(9, LOW);	//Apagado<br>
+                                        delay(1000);<br>
+                                        
+                                        // Mostramos el numero 2<br>
+                                        digitalWrite(6, HIGH);	//Apagado<br>
+                                        digitalWrite(7, HIGH);		//Encendido<br>
+                                        digitalWrite(10, LOW);	//Encendido<br>
+                                        digitalWrite(12, HIGH);	//Apagado<br>
+                                        digitalWrite(13, HIGH);	//Apagado<br>
+                                        digitalWrite(5, LOW);	//Apagado<br>
+                                        digitalWrite(4, HIGH);	//Apagado<br>
+                                        digitalWrite(9, LOW);	//Apagado<br>
+                                        delay(1000);<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 12 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/12.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 12 : Entrada Digital Boton 1</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);	//LED<br>
+                                        pinMode(8, INPUT);	//BOTON<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, digitalRead(8)); //Escribimpos en el LED el valor del BOTON<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 13 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/13.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 13 : Entrada Digital Boton 2</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);	//LED1<br>
+                                        pinMode(8, INPUT);	//BOTON1<br>
+                                        pinMode(11, OUTPUT);	//LED2<br>
+                                        pinMode(2, INPUT);	//BOTON2<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(13, digitalRead(8)); //Escribimpos en el LED1 el valor del BOTON1<br>
+                                        digitalWrite(11, digitalRead(2)); //Escribimpos en el LED2 el valor del BOTON2<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Tarjeta Ejercicio 14 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/14.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 14 : Entrada Digital Condicionales Boton</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+
+                                        void setup()<br>
+                                        {
+                                          pinMode(13, OUTPUT);	//LED<br>
+                                          pinMode(8, INPUT);	//BOTON<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {
+                                          if (digitalRead(8) == HIGH)		//Pregunta si el boton1 esta activado<br>
+                                          {
+                                            digitalWrite(13, HIGH);			//SI: encendemos el led1<br>
+                                          }
+                                          else if(digitalRead(8) == LOW)	//Pregunta si el boton1 esta desactivado<br>
+                                          {
+                                            digitalWrite(13, LOW);			//SI: apagamos el led1<br>
+                                          }<br>
+                                        }<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 15 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/15.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 15 : Entrada Digital Condicionales Boton 2</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(13, OUTPUT);	//LED1<br>
+                                        pinMode(8, INPUT);	//BOTON1<br>
+                                        pinMode(11, OUTPUT);	//LED2<br>
+                                        pinMode(2, INPUT);	//BOTON2<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        if (digitalRead(8) == HIGH)		//Pregunta si el boton1 esta activado<br>
+                                        {<br>
+                                            digitalWrite(13, HIGH);			//SI: encendemos el led1<br>
+                                        }<br>
+                                        else if(digitalRead(8) == LOW)	//Pregunta si el boton1 esta desactivado<br>
+                                        {<br>
+                                            digitalWrite(13, LOW);			//SI: apagamos el led1<br>
+                                        }<br>
+                                        
+                                        if (digitalRead(2) == HIGH)		//Pregunta si el boton2 esta activado<br>
+                                        {<br>
+                                            digitalWrite(11, HIGH);			//SI: encendemos el led2<br>
+                                        }<br>
+                                        else if(digitalRead(2) == LOW)	//Pregunta si el boton2 esta desactivado<br>
+                                        {<br>
+                                            digitalWrite(11, LOW);			//SI: apagamos el led2<br>
+                                        }<br>
+}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 16 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/16.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 16 : Entrada Digital Condicionales OR Boton 1</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        //Inicializamos puertos<br>
+                                        pinMode(13, OUTPUT);	//LED1<br>
+                                        pinMode(8, INPUT);	//BOTON1<br>
+                                        pinMode(2, INPUT);	//BOTON2<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        if (digitalRead(8) == HIGH || digitalRead(2) == HIGH)	//Pregunta si se cumple la condición<br>
+                                        {<br>
+                                            digitalWrite(13, HIGH);			//SI: encendemos el led1<br>
+                                        }<br>
+                                        else	//En caso contrario<br>
+                                        {<br>
+                                            digitalWrite(13, LOW);			//NO: apagamos el led1<br>
+                                        }<br>
+
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 17 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/17.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Práctica 1: Titulo</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Inicializamos puertos<br>
+                                          pinMode(13, OUTPUT);	//LED1<br>
+                                          pinMode(8, INPUT);	//BOTON1<br>
+                                          pinMode(2, INPUT);	//BOTON2<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          if (digitalRead(8) == HIGH && digitalRead(2) == HIGH)		//Pregunta si se cumple la condición<br>
+                                          {<br>
+                                            digitalWrite(13, HIGH);			//SI: encendemos el led1<br>
+                                          }<br>
+                                          else	//En caso contrario<br>
+                                          {<br>
+                                            digitalWrite(13, LOW);			//NO: apagamos el led1<br>
+                                          }<br>
+                                        
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Tarjeta Ejercicio 18 -->
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <figure class="mb-4" align="center"><video width="100%"  controls>
+                                    <source src="video/18.mp4" type="video/mp4">
+                                </video></p></figure> 
+                                <div class="card-body px-4">
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 18 : Entrada Digital Contador Leds</h5>
+                                    <p class="card-text mb-0">
+                                        // C++ code<br>
+                                        // CONTADOR<br>
+                                        
+                                        int cuenta = 0;		//Variable que guarda el numero de veces que se ha contado<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Inicializamos puertos<br>
+                                          pinMode(13, OUTPUT);	//LED1<br>
+                                          pinMode(12, OUTPUT);	//LED2<br>
+                                          pinMode(11, OUTPUT);	//LED3<br>
+                                          pinMode(10, OUTPUT);	//LED4<br>
+                                          pinMode(2, INPUT);	//BOTON<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          if (digitalRead(2) == HIGH)		//Pregunta si el boton esta activado<br>
+                                          {<br>
+                                            cuenta++;<br>
+                                            delay(500);<br>
+                                          }<br>
+                                          if(cuenta >= 5)<br>
+                                          {<br>
+                                            cuenta = 0;<br>
+                                          }<br>
+                                          
+                                          if(cuenta == 0)<br>
+                                          {<br>
+                                              digitalWrite(13, LOW);<br>
+                                            digitalWrite(12, LOW);<br>
+                                            digitalWrite(11, LOW);<br>
+                                            digitalWrite(10, LOW);<br>
+                                          } <br>
+                                          else if(cuenta == 1)<br>
+                                          {<br>
+                                              digitalWrite(13, HIGH);<br>
+                                            digitalWrite(12, LOW);<br>
+                                            digitalWrite(11, LOW);<br>
+                                            digitalWrite(10, LOW);<br>
+                                          } <br>
+                                          else if(cuenta == 2)<br>
+                                          {<br>
+                                              digitalWrite(13, HIGH);<br>
+                                            digitalWrite(12, HIGH);<br>
+                                            digitalWrite(11, LOW);<br>
+                                            digitalWrite(10, LOW);<br>
+                                          }<br>
+                                          else if(cuenta == 3)<br>
+                                          {<br>
+                                              digitalWrite(13, HIGH);<br>
+                                            digitalWrite(12, HIGH);<br>
+                                            digitalWrite(11, HIGH);<br>
+                                            digitalWrite(10, LOW);<br>
+                                          }<br>
+                                          else if(cuenta == 4)<br>
+                                          {<br>
+                                              digitalWrite(13, HIGH);<br>
+                                            digitalWrite(12, HIGH);<br>
+                                            digitalWrite(11, HIGH);<br>
+                                            digitalWrite(10, HIGH);<br>
+                                          }<br>
+                                        }
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section> 
+            <!--Fin Seccion de Tarjetas de Prácticas -->
+                        
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4"></p> Mediante la realización de esta práctica recordé los principales puntos al momento de querer hacer algún programa con un Arduino, además de como se escribe el código para su uso.
+                        <p class="fs-6 mb-4"></p>
                         
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        <p class="fs-6 mb-4"></p>Fernández, Y. (2022). Qué es arduino, cómo funciona y qué puedes hacer con uno. Xataka. https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno
+                        <p class="fs-6 mb-4"></p>TinkerCad | From mind to design in minutes. (s.f.). Tinkercad. https://www.tinkercad.com/classrooms/b5s2eOYhgMn/activities/kxX9nVrX23z
+                        <br>
                         
-                        <p id="descargables">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+                    
 
                 </div>
             </section>
