@@ -79,20 +79,27 @@
                                 
                         <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4"></p> Esta Practica es la continuacion de la practica anterior, se realizaran varios ejercicios básicos con un Arduino uno, la finalidad de estos ejercicios es el recordar o aprender el funcionamiento básico de la programación de un Arduino para poder implementarlo para proyectos futuros.
                         
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"></p>
-                        
+                        <p class="fs-6 mb-4"></p>Arduino es una plataforma de software y hardware libres basada en una placa que incluye circuitos electrónicos con entradas y salidas, analógicas y digitales, que conectan el mundo físico con el mundo virtual, a partir de la cual se pueden crear objetos electrónicos interactivos, como robots o sistemas domóticos.
+                        <p class="fs-6 mb-4"></p>El Arduino es una placa basada en un microcontrolador ATMEL. Los microcontroladores son circuitos integrados en los que se pueden grabar instrucciones, las cuales las escribes con el lenguaje de programación que puedes utilizar en el entorno Arduino IDE. Estas instrucciones permiten crear programas que interactúan con los circuitos de la placa.
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
                         <p class="fs-6 mb-4"></p>
+                        Placa de desarrollo ARDUINO UNO<br>
+                        Protoboard<br>
+                        Jumpers<br>
+                        Leds<br>
+                        Resistencias de 220 Ω<br>
+                        Servos<br>
+                        Potenciometro<br>
                         
                         <p id="desarrollo">
-                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">1- Desarrollo -</h2>
                         <p class="fs-6 mb-4"></p>
                         
                         
@@ -106,7 +113,7 @@
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4"></p>
 
-
+      n
             <!-- Seccion Tarjetas reportes Prácticas-->
             <section id="practicas">
                 <div class="container px-5 my-2">
@@ -161,106 +168,356 @@
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 2 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video2a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 2: Servo 2</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // Incluímos la librería para poder controlar el servo<br>
+                                        #include /Servo.h/<br>
+                                        
+                                        // Declaramos la variable para controlar el servo<br>
+                                        Servo servoMotor;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          // Iniciamos el monitor serie para mostrar el resultado<br>
+                                          Serial.begin(9600);<br>
+                                         
+                                          // Iniciamos el servo para que empiece a trabajar con el pin 9<br>
+                                          servoMotor.attach(9);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // Vamos a tener dos bucles uno para mover en sentido positivo y otro en sentido negativo<br>
+                                          // Para el sentido positivo<br>
+                                          for (int i = 0; i = 180; i++)<br>
+                                          {
+                                            // Desplazamos al ángulo correspondiente<br>
+                                            servoMotor.write(i);<br>
+                                            // Hacemos una pausa de 25ms<br>
+                                            delay(25);<br>
+                                          }<br>
+                                         
+                                          // Para el sentido negativo<br>
+                                          for (int i = 179; i > 0; i--)<br>
+                                          {<br>
+                                            // Desplazamos al ángulo correspondiente<br>
+                                            servoMotor.write(i);<br>
+                                            // Hacemos una pausa de 25ms<br>
+                                            delay(25);<br>
+                                          }<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 3 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video3a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 3: Potenciometro Serial print</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+
+                                        int valor;		//variable que almacena la lectura analógica raw<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Inicializamos la comunicación serial<br>
+                                          Serial.begin(9600);<br>
+                                          
+                                          //Escribimos por el monitor serie mensaje de inicio<br>
+                                          Serial.println("Inicio de sketch - valores del potenciometro");<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {
+                                          // leemos del pin A0 valor<br>
+                                          valor = analogRead(A0);<br>
+                                          
+                                          //Imprimimos por el monitor serie<br>
+                                          Serial.print("El valor es = ");<br>
+                                          Serial.println(valor);<br>
+                                          delay(1000);<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 4 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video4a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 4: Servos</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+                                        #include /Servo.h/<br>
+                                        int valor;		//variable que almacena la lectura analógica raw<br>
+                                        int pos;        //Variable que almacena la posicion del servo<br>
+                                        
+                                        
+                                        //Le decimos al codigo que va a existir un servo<br>
+                                        //llamado my servo<br>
+                                        Servo myservo1;<br>
+                                        Servo myservo2;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Le decimos al codigo donde esta conectado el servo 1<br>
+                                          myservo1.attach(9);<br>
+                                          //Le decimos al codigo donde esta conectado el servo 2<br>
+                                          myservo2.attach(2);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // leemos el valor de potenciometro<br>
+                                          valor = analogRead(A0);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos = map(valor, 0, 1023, 0, 180);<br>
+                                          //Mandamos la posicion al servo 1<br>
+                                          myservo1.write(pos);<br>
+                                          //Mandamos la posicion al servo 2<br>
+                                          myservo2.write(pos);<br>
+                                          //esperamos un poco para que se mueva<br>
+                                          delay(10);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 5 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video5a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 5:Servos invertidos </h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+                                        #include /Servo.h/<br>
+                                        int valor;		//variable que almacena la lectura analógica raw<br>
+                                        int pos1;        //Variable que almacena la posicion del servo1<br>
+                                        int pos2;        //Variable que almacena la posicion del servo2<br>
+                                        
+                                        
+                                        //Le decimos al codigo que va a existir un servo<br>
+                                        //llamado my servo<br>
+                                        Servo myservo1;<br>
+                                        Servo myservo2;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Le decimos al codigo donde esta conectado el servo 1<br>
+                                          myservo1.attach(9);<br>
+                                          //Le decimos al codigo donde esta conectado el servo 2<br>
+                                          myservo2.attach(2);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // leemos el valor de potenciometro<br>
+                                          valor = analogRead(A0);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos1 = map(valor, 0, 1023, 0, 180);<br>
+                                          //Mandamos la posicion al servo 1<br>
+                                          myservo1.write(pos1);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos2 = map(valor, 0, 1023, 180, 0);<br>
+                                          //Mandamos la posicion al servo 2<br>
+                                          myservo2.write(pos2);<br>
+                                          //esperamos un poco para que se mueva<br>
+                                          delay(10);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 6 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video6a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 6: Servos Independientes</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+                                        #include /Servo.h/<br>
+                                        int valor1;		//variable que almacena la <br>
+                                                        //lectura analógica1<br>
+                                        int valor2;		//variable que almacena la <br>
+                                                        //lectura analógica2<br>
+                                        int pos1;        //Variable que almacena la posicion del servo1<br>
+                                        int pos2;        //Variable que almacena la posicion del servo2<br>
+                                        
+                                        
+                                        //Le decimos al codigo que va a existir un servo<br>
+                                        //llamado my servo<br>
+                                        Servo myservo1;<br>
+                                        Servo myservo2;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Le decimos al codigo donde esta conectado el servo 1<br>
+                                          myservo1.attach(9);<br>
+                                          //Le decimos al codigo donde esta conectado el servo 2<br>
+                                          myservo2.attach(2);<br>
+                                        }
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // leemos el valor de potenciometro1<br>
+                                          valor1 = analogRead(A0);<br>
+                                          // leemos el valor de potenciometro2<br>
+                                          valor2 = analogRead(A1);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos1 = map(valor1, 0, 1023, 0, 180);<br>
+                                          pos2 = map(valor2, 0, 1023, 0, 180);<br>
+                                          //Mandamos la posicion al servo 1<br>
+                                          myservo1.write(pos1);<br>
+                                          //Mandamos la posicion al servo 2<br>
+                                          myservo2.write(pos2);<br>
+                                          //esperamos un poco para que se mueva<br>
+                                          delay(10);<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 7 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video7a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 7: Servos Independientes y leds</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+                                        #include /Servo.h/<br>
+                                        int valor1;		//variable que almacena la <br>
+                                                        //lectura analógica1<br>
+                                        int valor2;		//variable que almacena la <br>
+                                                        //lectura analógica2<br>
+                                        int pos1;        //Variable que almacena la posicion del servo1<br>
+                                        int pos2;        //Variable que almacena la posicion del servo2<br>
+                                        
+                                        
+                                        //Le decimos al codigo que va a existir un servo<br>
+                                        //llamado my servo<br>
+                                        Servo myservo1;<br>
+                                        Servo myservo2;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          pinMode(12, OUTPUT);	//LED1<br>
+                                          pinMode(11, OUTPUT);	//LED2<br>
+                                          
+                                          //Le decimos al codigo donde esta conectado el servo 1<br>
+                                          myservo1.attach(9);<br>
+                                          //Le decimos al codigo donde esta conectado el servo 2<br>
+                                          myservo2.attach(2);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // leemos el valor de potenciometro1<br>
+                                          valor1 = analogRead(A0);<br>
+                                          // leemos el valor de potenciometro2<br>
+                                          valor2 = analogRead(A1);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos1 = map(valor1, 0, 1023, 0, 180);<br>
+                                          pos2 = map(valor2, 0, 1023, 0, 180);<br>
+                                          //Mandamos la posicion al servo 1<br>
+                                          myservo1.write(pos1);<br>
+                                          if (pos1 = 10){<br>
+                                            digitalWrite(12, HIGH); //Encendemos led1<br>
+                                          } else if (pos1 >= 170){<br>
+                                              digitalWrite(11, HIGH); //Encendemos led1<br>
+                                          } else<br>
+                                          {<br>
+                                            digitalWrite(12, LOW); //Encendemos led1<br>
+                                            digitalWrite(11, LOW); //Encendemos led1<br>
+                                          }<br>
+                                          
+                                          
+                                          
+                                          //Mandamos la posicion al servo 2<br>
+                                          myservo2.write(pos2);<br>
+                                          //esperamos un poco para que se mueva<br>
+                                          delay(10);<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                         <!--Tarjeta Ejercicio 1 -->
+                         <!--Tarjeta Ejercicio 8 -->
                          <div class="col-lg-6 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/video8a.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Blink</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 8: Servo Fuente</h5>
                                     <p class="card-text mb-0">
-                                       ////////////////////////////
+                                        // C++ code<br>
+                                        #include /Servo.h/<br>
+                                        int valor;		//variable que almacena la lectura analógica raw<br>
+                                        int pos;        //Variable que almacena la posicion del servo<br>
+                                        
+                                        
+                                        //Le decimos al codigo que va a existir un servo<br>
+                                        //llamado my servo<br>
+                                        Servo myservo1;<br>
+                                        Servo myservo2;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                          //Le decimos al codigo donde esta conectado el servo 1<br>
+                                          myservo1.attach(9);<br>
+                                          //Le decimos al codigo donde esta conectado el servo 2<br>
+                                          myservo2.attach(2);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          // leemos el valor de potenciometro<br>
+                                          valor = analogRead(A0);<br>
+                                          //Convertimos el valor del potenciometro a una <br>
+                                          //que entienda el servo<br>
+                                          pos = map(valor, 0, 1023, 0, 180);<br>
+                                          //Mandamos la posicion al servo 1<br>
+                                          myservo1.write(pos);<br>
+                                          //Mandamos la posicion al servo 2<br>
+                                          myservo2.write(pos);<br>
+                                          //esperamos un poco para que se mueva<br>
+                                          delay(10);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
