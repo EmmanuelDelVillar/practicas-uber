@@ -79,13 +79,13 @@
                                 
                         <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4"></p> 
+                        <p class="fs-6 mb-4"></p> En el proceso de aprendizaje y desarrollo de habilidades con el Atiny 85, aprovecharemos la versatilidad de un Arduino uno como programador. Esta estrategia nos permitirá abordar una serie de programas básicos como punto de partida para familiarizarnos con este microcontrolador. Con el tiempo y la práctica, tendremos la capacidad de abordar desafíos más complejos, incorporando código de mayor sofisticación y funcionalidad en nuestros proyectos.
                         
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4"></p>
-                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4"></p>El ATtiny85 es un microcontrolador de bajo costo y bajo consumo de energía fabricado por Atmel (ahora parte de Microchip Technology). Es parte de la familia ATtiny de microcontroladores y se utiliza comúnmente en proyectos electrónicos para realizar tareas de control y procesamiento de datos debido a su pequeño tamaño y eficiencia energética.
+                        <p class="fs-6 mb-4"></p>Un programador es un dispositivo o software que se utiliza para cargar o grabar código o firmware en microcontroladores, microprocesadores, memorias EEPROM y otros tipos de chips programables. Su función principal es transferir el programa o datos binarios desde un ordenador o una fuente de datos hacia el dispositivo objetivo.
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
@@ -124,9 +124,9 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="assets/f1.jpeg" alt="..." />
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Arduino UNO as ISP</h5>
                                     <p class="card-text mb-0">
-
+                                         Subimos el codigo de ISP con el que ya cuenta la aplicacion de arduino y a contuniación quemamos el bootloader
                                     </p>
                                 </div>
                             </div>
@@ -138,9 +138,22 @@
                                     <source src="video/v1.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 2: Attiny Blink</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85 <br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                          pinMode(3, OUTPUT);<br>
+                                        }<br>
+                                        
+                                        void loop()<br>
+                                        {<br>
+                                          digitalWrite(3, HIGH);<br>
+                                          delay(1000);<br>
+                                          digitalWrite(3, LOW);<br>
+                                          delay(1000);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
@@ -152,173 +165,445 @@
                                     <source src="video/v2.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 3: Attiny Digital HIGH</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(3, HIGH);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 4 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v3.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 4: Attiny Digital LOW</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(3, LOW);<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 5 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v4.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 5: Attiny Digital Delay</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(3, HIGH);<br>
+                                        delay(200);<br>
+                                        digitalWrite(3, LOW);<br>
+                                        delay(200);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 6 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v5.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 6: Attiny 2 LEDs Delay</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        pinMode(4, OUTPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(3, HIGH);<br>
+                                        delay(300);<br>
+                                        digitalWrite(3, LOW);<br>
+                                        delay(300);<br>
+                                        digitalWrite(4, HIGH);<br>
+                                        delay(300);<br>
+                                        digitalWrite(4, LOW);<br>
+                                        delay(300);<br>
+                                        }
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 7 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v6.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 7: Attiny 3 LEDs Delay</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(0, OUTPUT);<br>
+                                        pinMode(1, OUTPUT);<br>
+                                        pinMode(2, OUTPUT);<br>
+                                        }
+                                        <br>
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(0, HIGH);<br>
+                                        digitalWrite(1, LOW);<br>
+                                        digitalWrite(2, LOW);<br>
+                                        delay(300);<br>
+                                        digitalWrite(0, HIGH);<br>
+                                        digitalWrite(1, HIGH);<br>
+                                        digitalWrite(2, LOW);<br>
+                                        delay(300);<br>
+                                        digitalWrite(0, HIGH);<br>
+                                        digitalWrite(1, HIGH);<br>
+                                        digitalWrite(2, HIGH);<br>
+                                        delay(300);<br>
+                                        digitalWrite(0, LOW);<br>
+                                        digitalWrite(1, LOW);<br>
+                                        digitalWrite(2, LOW);<br>
+                                        delay(300);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 8 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v7.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 8: Attiny Digital Input</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        digitalWrite(3, digitalRead(4));<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 9 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v8.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 9: Attiny Digital Input IF-ELSE</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        if(digitalRead(4)==HIGH){<br>
+                                            digitalWrite(3,HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                            digitalWrite(3,LOW);<br>
+                                        }<br>
+}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 10 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v9.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 10: Attiny Digital Input IF variables</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        int boton=LOW;<br>
+
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, OUTPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        boton=digitalRead(4);<br>
+                                        
+                                        if(boton==HIGH){<br>
+                                            digitalWrite(3,HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                            digitalWrite(3,LOW);<br>
+                                        }<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 11 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v10.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 11: Attiny Digital Input OR</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        int boton1=LOW;<br>
+                                        int boton2=LOW;<br>
+
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, INPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        pinMode(2, OUTPUT);<br>
+                                        
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        boton1=digitalRead(4);<br>
+                                        boton2=digitalRead(3);<br>
+                                        
+                                        if(boton1==HIGH || boton2==HIGH  ){<br>
+                                            digitalWrite(2,HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                            digitalWrite(2,LOW);<br>
+                                        }<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 12 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v11.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 12: Attiny Digital Input AND</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+                                        int boton1=LOW;<br>
+                                        int boton2=LOW;<br>
+
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(3, INPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        pinMode(2, OUTPUT);<br>
+                                        
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        boton1=digitalRead(4);<br>
+                                        boton2=digitalRead(3);<br>
+                                        
+                                        if(boton1==HIGH && boton2==HIGH  ){<br>
+                                            digitalWrite(2,HIGH);<br>
+                                        }<br>
+                                        else{<br>
+                                            digitalWrite(2,LOW);<br>
+                                        }<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 13 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v12.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 13: Attiny Contador + 3 LEDs</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+
+                                        int contador=0;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(0, OUTPUT);<br>
+                                        pinMode(1, OUTPUT);<br>
+                                        pinMode(2, OUTPUT);<br>
+                                        pinMode(3, INPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        if(digitalRead(3)==HIGH){<br>
+                                            contador++;<br>
+                                        }
+                                        <br>
+                                        if(contador>3){<br>
+                                            contador=0;<br>
+                                        }
+                                        
+                                        if(contador==0){
+                                            digitalWrite(0, LOW);<br>
+                                            digitalWrite(1, LOW);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==1){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, LOW);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==2){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, HIGH);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==3){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, HIGH);<br>
+                                            digitalWrite(2, HIGH);<br>
+                                        }<br>
+                                        
+                                        delay(500);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <!--Tarjeta Ejercicio 3 -->
+                        <!--Tarjeta Ejercicio 14 -->
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <figure class="mb-4" align="center"><video width="100%"  controls>
                                     <source src="video/v13.mp4" type="video/mp4">
                                 </video></p></figure>  
                                 <div class="card-body px-4">
-                                    <h5 class="card-title mt-3 mb-1">Ejercicio 1: Servo 1</h5>
+                                    <h5 class="card-title mt-3 mb-1">Ejercicio 14: Attiny Contador + - 3 LEDs</h5>
                                     <p class="card-text mb-0">
-                    
+                                        // Codigo Attiny85<br>
+                                        //<br>
+
+                                        int contador=0;<br>
+                                        
+                                        void setup()<br>
+                                        {<br>
+                                        pinMode(0, OUTPUT);<br>
+                                        pinMode(1, OUTPUT);<br>
+                                        pinMode(2, OUTPUT);<br>
+                                        pinMode(3, INPUT);<br>
+                                        pinMode(4, INPUT);<br>
+                                        }<br>
+
+                                        void loop()<br>
+                                        {<br>
+                                        if(digitalRead(3)==HIGH){<br>
+                                            contador++;<br>
+                                        }<br>
+                                        
+                                        if(digitalRead(4)==HIGH){<br>
+                                            contador--;<br>
+                                        }<br>
+                                        
+                                        if(contador>3){<br>
+                                            contador=3;<br>
+                                        }<br>
+                                        
+                                        if(contador/0){<br>
+                                            contador=0;<br>
+                                        }<br>
+                                        
+                                        if(contador==0){<br>
+                                            digitalWrite(0, LOW);<br>
+                                            digitalWrite(1, LOW);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==1){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, LOW);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==2){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, HIGH);<br>
+                                            digitalWrite(2, LOW);<br>
+                                        }<br>
+                                        else if(contador==3){<br>
+                                            digitalWrite(0, HIGH);<br>
+                                            digitalWrite(1, HIGH);<br>
+                                            digitalWrite(2, HIGH);<br>
+                                        }<br>
+                                        
+                                        delay(500);<br>
+                                        }<br>
                                     </p>
                                 </div>
                             </div>
@@ -335,7 +620,7 @@
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4"></p> En resumen, esta práctica me ha permitido refrescar mi conocimiento sobre los aspectos fundamentales para desarrollar programas utilizando Arduino, así como recordar cómo escribir el código necesario para su funcionamiento.
+                        <p class="fs-6 mb-4"></p> En esta práctica he adquirido un entendimiento fundamental del funcionamiento esencial del microcontrolador ATtiny85, incluyendo su interconexión con el programador y la capacidad de cargar el código necesario para operar este dispositivo de manera efectiva.
                         <p class="fs-6 mb-4"></p>
                         
 
